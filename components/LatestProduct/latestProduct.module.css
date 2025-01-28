@@ -1,0 +1,100 @@
+/* Main Container */
+._main_containar {
+    padding: 20px;
+    background-color: #fff5f7; /* Soft pink background */
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d25c9f; /* Pink color for the title */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Product Container */
+  .containar {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsive layout */
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Individual Product Card */
+  .box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* Ensures 4 products per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Product Image */
+  .img_div {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #f1c6d8; /* Soft pink border */
+  }
+  
+  /* Product Info */
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d25c9f; /* Pink color for product name */
+    margin: 15px 0;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: #7e33e0; /* Purple color for price */
+    margin-bottom: 20px;
+    text-decoration: line-through; /* Displaying original price as strikethrough */
+  }
+  
+  /* Add to Cart Button (Optional, if needed) */
+  .add_to_cart {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #d25c9f; /* Pink background */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add_to_cart:hover {
+    background-color: #a94577; /* Darker pink on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 900px) {
+    .box {
+      flex: 1 1 calc(50% - 20px); /* 2 products per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .box {
+      flex: 1 1 100%; /* 1 product per row */
+    }
+  }
+  
