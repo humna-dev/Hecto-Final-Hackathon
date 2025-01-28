@@ -1,44 +1,50 @@
-Hello sir! I am Muhammad Faizan from Governor sindh it initiaitve.               |--------|\|
-R-No: 00398964                                                                   |--------|\|
-slot: Tuesday 2-5                                                                |--------|\|
-Teacher: Fahad Khan, Ali Aftab Shikh                                             |--------|\|
-Github: Faizan418                                                                |--------|\|
----------------------------------------------------------|-|-|-|-|-|-|-|-|-|-|-|-|--------|\|
+**Hecto: A Q-Commerce Marketplace for Chairs & Sofas 🛋️🪑**
+
+FurnitureTuck is a dynamic and responsive online marketplace for ordering chairs, sofas, and related furniture. It features a user-friendly interface, seamless navigation, and robust backend integration. This project is designed to offer a top-tier shopping experience for those looking to furnish their homes with quality furniture.
+
+**Features 🌟**
+Dynamic Product Listings: Real-time data fetched from Sanity CMS for chairs, sofas, and related furniture.
+Search & Filters: Functional search bar and category filters to easily find the perfect piece of furniture.
+Detailed Pages: Dynamic routing for product detail pages with "Add to Cart" functionality.
+Responsive Design: Optimized for all screen sizes, from mobile phones to desktop browsers.
+Secure API Handling: Environment variables ensure secure backend integration.
+Performance Optimizations: Lazy loading, image compression, and a clean, scalable codebase.
+
+**Tech Stack 🔧**
+Frontend: Next.js 15, Tailwind CSS, TypeScript
+Backend: Sanity CMS
+Hosting: Vercel
 
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+git clone https://github.com/yourgithubusername/FurnitureTuck.git
+cd FurnitureTuck
+Install dependencies:
 
-First, run the development server:
 
-```bash
+npm install
+Create a .env file: Add the following environment variables to connect with Sanity CMS:
+
+
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+Run the development server:
+
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open the app: Visit http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Testing 🧪
+Types of Tests:
+Functional Testing: Validates the product listing, search, filters, and detail pages.
+Performance Testing: Optimized for speed and responsiveness using Lighthouse.
+Security Testing: Ensures secure API key handling and proper input validations.
+Test Reports:
+Testing results are documented in the Testing_Report.csv file available in the repository.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Deployment 🚀
+The project is deployed on Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Once deployment is finalized, the staging environment link will be available here.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
