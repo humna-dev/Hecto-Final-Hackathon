@@ -15,17 +15,11 @@ Frontend: Next.js 15, Tailwind CSS, TypeScript
 Backend: Sanity CMS
 Hosting: Vercel
 
-
-
-git clone https://github.com/yourgithubusername/FurnitureTuck.git
-cd FurnitureTuck
 Install dependencies:
-
-
 npm install
 Create a .env file: Add the following environment variables to connect with Sanity CMS:
 
-
+.env 
 NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
 NEXT_PUBLIC_SANITY_DATASET=production
 Run the development server:
