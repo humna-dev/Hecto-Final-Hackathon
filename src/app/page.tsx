@@ -1,15 +1,14 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
-import Discount from "../../components/Discount/Discount";
 import Shopex from "../../components/Shopex/Shopex";
-import Trending from "../../components/Trending/Trending";
-import TrendingProduct from "../../components/Trending Products/Trending Products"; // Fixed path
 import FeaturedProduct from "../../components/featuredProduct/featuredProduct"
-import Shop from "../../components/shop/shop"; 
-import LatestBlog from "../../components/latestBlog/latestBlog";
+import LatestBlog from "../../components/LatestBlog/latestBlog";
 import Footer from "../../components/Footer/Footer";
 import LatestProduct from "../../components/LatestProduct/latestProduct"
-
+import UniqueFeatures from "../../components/UniqueFeatures/UniqueFeatures"
+import TopCategories from "../../components/TopCategories/TopCategories";
+import DisscountOffer from "../../components/DisscountOffer/DisscountOffer";
+import Blog from "../../components/Blog/Blog"
 export default function Home() {
   return (
     <div>
@@ -17,11 +16,11 @@ export default function Home() {
       <Header />
       <FeaturedProduct /> 
     <LatestProduct />
-      <Discount /> {/* Added Discount component */}
+    <UniqueFeatures />
+  <DisscountOffer />
+     < TopCategories />
       <Shopex />
-      <Trending />
-      <TrendingProduct /> {/* Fixed component name */}
-      <Shop /> {/* Fixed component name */}
+      <Blog />
       <LatestBlog />
       <Footer />
     </div>

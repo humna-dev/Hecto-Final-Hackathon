@@ -1,40 +1,26 @@
-import styles from "./latestBlog.module.css";
 import Image from "next/image";
-const Section9 = () => {
+import styles from "./LatestBlog.module.css";
+const LatestBlog = () => {
   return (
     <div className={styles.main_containar}>
       <div className={styles.containar}>
-        <div className={styles.title}>
-          <h2 className="text-4xl font-semibold flex justify-center p-8 mb-9 text-indigo-700">
-            Leatest Blog
-          </h2>
+        <div className={styles.upper_div}>
+          <div className={styles.upper_div_details}>
+            <h1 className={styles.main_heading}>
+              Get Leader Update By Subscribe <br /> Our Newlater
+            </h1>
+            <button className={styles.btn} type="button">
+              Shop Now
+            </button>
+          </div>
         </div>
-        <div className={styles.box}>
-          <div className={styles.card}>
+        <div className={styles.lower_div}>
+          <div className={styles.img_div}>
             <Image
-              className={styles.main_img}
-              src={"/images/file-nine/img-1.png"}
-              alt="item"
+              src={"/images/file-eight/logos-img.png"}
+              alt="logos"
               height={100}
-              width={350}
-            />
-          </div>
-          <div className={styles.card}>
-            <Image
-              className={styles.main_img}
-              src={"/images/file-nine/img-2.png"}
-              alt="item"
-              height={100}
-              width={350}
-            />
-          </div>
-          <div className={styles.card}>
-            <Image
-              className={styles.main_img}
-              src={"/images/file-nine/img-3.png"}
-              alt="item"
-              height={100}
-              width={350}
+              width={900}
             />
           </div>
         </div>
@@ -43,4 +29,4 @@ const Section9 = () => {
   );
 };
 
-export default Section9;
+export default LatestBlog;

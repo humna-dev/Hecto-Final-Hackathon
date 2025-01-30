@@ -1,6 +1,5 @@
 import styles from "./Shopex.module.css";
 import Image from "next/image";
-
 const Shopex = () => {
   return (
     <div className={styles.main_containar}>

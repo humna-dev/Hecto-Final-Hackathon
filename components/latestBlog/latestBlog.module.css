@@ -1,65 +1,72 @@
 .main_containar {
-  height: 100%;
-  padding: 20px 80px;
+  padding: 40px 0;
 }
 .containar {
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  padding: 50px 30px;
-}
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  background-color: rgb(245, 245, 245);
-  border-radius: 10px;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgb(255, 255, 255);
-  margin: 10px;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-}
-.card {
-  border-radius: 10px;
-  padding: 0px;
-  margin: 5px;
-  align-items: center;
-  justify-content: center;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
-.card:hover {
-  transition: 0.6s;
-  transform: scale(1.05);
-  cursor: pointer;
+.upper_div {
+  height: 80vh;
+  background-image: url("/images/file-eight/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.upper_div_details {
+  text-align: center;
 }
 
-@media (max-width: 900px) {
-  .main_containar {
-    padding: 10px 50px;
+.main_heading {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgb(2, 2, 109);
+}
+.btn {
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  background-color: #fb2e86;
+}
+.btn:hover {
+  background-color: #f00081;
+}
+.lower_div {
+  padding: 20px 50px;
+}
+.img_div {
+  justify-content: center;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .lower_div {
+    padding: 20px 30px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+  .lower_div {
+    padding: 20px 10px;
+  }
+  .main_heading {
+    font-size: 25px;
+  }
+  .btn {
+    font-size: 15px;
+  }
   .main_containar {
-    padding: 10px 30px;
+    padding: 20px 0;
   }
 }
 @media (max-width: 500px) {
-  .main_containar {
-    padding: 10px 10px;
-  }
-  .box {
-    padding: 2px;
-    margin: 2px;
-  }
-}
-@media (max-width: 480px) {
-  .containar {
-    padding: 5px;
+  .main_heading {
+    font-size: 20px;
   }
 }

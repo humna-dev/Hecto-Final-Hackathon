@@ -14,7 +14,7 @@ const BlogPage = () => {
       <Navbar />
       {/* Hero Section */}
       <div className="bg-gray-100 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4">Blog Collection</h1>
+        <h1 className="text-4xl font-bold mb-7 color-Pink">Blog Collection</h1>
       </div>
 
       {/* Image Gallery */}
@@ -28,8 +28,8 @@ const BlogPage = () => {
               <Image
                 src={image}
                 alt={`Furniture ${index + 1}`}
-                width={500}  // Adjust width as per your requirement
-                height={300} // Adjust height as per your requirement
+                width={500}  
+                height={300} 
                 className="w-full h-72 object-cover"
               />
             </div>

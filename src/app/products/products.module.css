@@ -1,15 +1,17 @@
 .abcd {
   /* border: 1px solid black; */
-  padding: 60px 150px;
+  padding: 70px 150px;
   height: 100%;
   align-items: center;
   align-content: center;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(233, 186, 204);
 }
 .efgh {
-  /* border: 1px solid black; */
-  padding: 30px 20px;
+  padding: 40px 30px;
+  background-color: rgb(248, 244, 248);
 }
+
+
 @media (max-width: 600px) {
   .abcd {
     padding: 50px 50px;

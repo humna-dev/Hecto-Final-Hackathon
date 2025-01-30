@@ -9,15 +9,15 @@ const page = () => {
       <Navbar />
       <div className={styles.abcd}>
         <div className={styles.efgh}>
-          <h1 className="text-4xl font-semibold">Products</h1>
-          <p className="font-semibold">
+          <h1 className={styles.productTitle}>Products</h1> {/* Use the local class */}
+          <p className={styles.productDescription}>
             Home . page{" "}
             <span className="text-rose-600 font-bold">. products</span>
-          </p>
+          </p> 
         </div>
       </div>
-      <div className={styles.main_container}>
-        <Data/>
+      <div className= "text-rose-600 font-bold">
+        <Data />
       </div>
       <Footer />
     </div>
