@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Hecto: A Q-Commerce Marketplace for Chairs & Sofas 🛋️🪑
 =======
 **Hecto: A Q-Commerce Marketplace for Chairs & Sofas 🛋️🪑**
