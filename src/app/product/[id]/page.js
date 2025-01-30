@@ -1,6 +1,7 @@
 
 "use client";
-import client from "../../sanityClient";
+import client from '@/sanity/lib/client';
+
 import { useEffect, useState } from "react";
 
 export default function ProductDetails({ params }) {
