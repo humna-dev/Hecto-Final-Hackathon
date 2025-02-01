@@ -20,8 +20,9 @@ export default function Home() {
   <DisscountOffer />
      < TopCategories />
       <Shopex />
-      <Footer />
       <Blog />
+      <Footer />
+  
     </div>
   );
 }

@@ -1,8 +1,7 @@
-
 "use client";
-import client from '@/sanity/lib/client';
-
+import { client } from '@/sanity/lib/client'; 
 import { useEffect, useState } from "react";
+import Image from "next/image"; // Import Image from next/image
 
 export default function ProductDetails({ params }) {
   const { id } = params;
@@ -26,7 +25,13 @@ export default function ProductDetails({ params }) {
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
-      <img src={product.image} alt={product.name} />
+      {/* Using Image component from Next.js for optimized loading */}
+      <Image 
+        src={product.image} 
+        alt={product.name} 
+        width={500} // Provide a fixed width for optimization
+        height={500} // Provide a fixed height for optimization
+      />
     </div>
   );
 }

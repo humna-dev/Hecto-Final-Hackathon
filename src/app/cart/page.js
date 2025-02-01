@@ -4,7 +4,7 @@ import Footer from "../../../components/Footer/Footer";
 import styles from "./cart.module.css";
 import { useCart } from "../contaxt/cartcontaxt";
 import Link from "next/link";
-
+import Image from "next/image"; // Import Next.js Image component
 
 export default function CartPage() {
   const { cart, dispatch } = useCart();
@@ -58,9 +58,7 @@ export default function CartPage() {
                   <th className="px-4 py-2 border border-slate-300">Image</th>
                   <th className="px-4 py-2 border border-slate-300">Product</th>
                   <th className="px-4 py-2 border border-slate-300">Price</th>
-                  <th className="px-4 py-2 border border-slate-300">
-                    Quantity
-                  </th>
+                  <th className="px-4 py-2 border border-slate-300">Quantity</th>
                   <th className="px-4 py-2 border border-slate-300">Total</th>
                   <th className="px-4 py-2 border border-slate-300">Actions</th>
                 </tr>
@@ -69,10 +67,12 @@ export default function CartPage() {
                 {cart.map((item) => (
                   <tr key={item.id} className="hover:bg-gray-100">
                     <td className="border border-slate-300 px-4 py-2">
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.name}
-                        className="w-20 mx-auto rounded"
+                        width={80} // Set a fixed width and height
+                        height={80} // Set a fixed width and height
+                        className="mx-auto rounded"
                       />
                     </td>
                     <td className="border border-slate-300 px-4 py-2">
