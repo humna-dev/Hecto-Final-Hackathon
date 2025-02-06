@@ -1,4 +1,5 @@
-const { withSentryConfig } = require("@sentry/nextjs");
+import * as Sentry from '@sentry/nextjs';
+
 
 const moduleExports = {
   // Yahan apni existing Next.js configuration add karein
