@@ -1,12 +1,6 @@
 import * as Sentry from '@sentry/nextjs';
 
-
-const moduleExports = {
-  // Yahan apni existing Next.js configuration add karein
-};
-
-const SentryWebpackPluginOptions = {
-  silent: true, // Yeh sabhi logs suppress kar deta hai
-};
-
-module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions);
+Sentry.init({
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,  
+  tracesSampleRate: 1.0, 
+});
